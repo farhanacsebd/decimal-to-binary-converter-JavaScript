@@ -12,6 +12,16 @@ if(num === ''){
 else if(num < 0){
     alert('Please enter a positive number')
 }
+else{
+    result.style.visibility = 'visible'
+}
+
+
+
+// converting
+
+const binaryNumber = Number(num).toString(2);
+result.innerText = binaryNumber;
 }
 
 submit.addEventListener('click',binary);
